@@ -1,6 +1,5 @@
 package com.tarikukebede.sunscription.Dtos;
 
-import com.tarikukebede.sunscription.Utils.Validation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,12 +10,12 @@ import javax.validation.constraints.NotEmpty;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BillingAddressInDto {
-    @NotEmpty(message = Validation.ADDRESS_REQUIRED)
+    @NotEmpty(message = "{address.required}")
     private String addressOne;
-    @NotEmpty(message = Validation.ADDRESS_REQUIRED)
+    @NotEmpty(message = "{address.required}")
     private String addressTwo;
-    @NotEmpty(message = Validation.POSTAL_CODE_REQUIRED)
+    @NotEmpty(message = "{postal.required}")
     private String postalCode;
-    @NotEmpty(message = Validation.PROVINCE_REQUIRED)
+    @NotEmpty(message = "{province.required}")
     private String province;
 }

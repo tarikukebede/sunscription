@@ -7,7 +7,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 import java.util.Optional;
 
+/**
+ * @author Tariku kebede
+ * defines the basic api operations
+ **/
 public class ServiceTemplate<T, K> implements ITemplateService<T, K> {
+
 
     protected  T t;
     private final JpaRepository<T, K> repository;
@@ -76,9 +81,5 @@ public class ServiceTemplate<T, K> implements ITemplateService<T, K> {
     public ResponseStatusException badRequest(){
         throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
                 HttpResponses.badRequest(t));
-    }
-
-    public ResponseStatusException duplicationNotAllowed(String field){
-        throw new ResponseStatusException(HttpStatus.BAD_REQUEST, HttpResponses.duplicateResponse(t, field));
     }
 }

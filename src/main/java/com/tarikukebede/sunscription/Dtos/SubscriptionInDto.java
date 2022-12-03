@@ -1,10 +1,8 @@
 package com.tarikukebede.sunscription.Dtos;
 
-import com.tarikukebede.sunscription.Utils.Validation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -21,9 +19,9 @@ import javax.validation.constraints.Pattern;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SubscriptionInDto {
-    @NotEmpty(message = Validation.PHONE_NO_REQUIRED)
-    @Pattern(regexp = "^\\d{10}$", message = Validation.PHONE_NO_REQUIRED)
+    @NotEmpty(message = "{phone.required}")
+    @Pattern(regexp = "^\\d{10}$", message = "{phone.valid}")
     private String phoneNo;
-    @NotNull(message = Validation.PRICE_PLAN_REQUIRED)
+    @NotNull(message = "{price_plan.required}")
     private Long pricePlan;
 }

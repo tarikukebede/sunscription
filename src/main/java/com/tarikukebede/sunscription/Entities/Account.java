@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
@@ -21,5 +22,5 @@ public class Account extends Model{
     private BillingAddress billingAddress;
     @OneToMany
     @JsonManagedReference
-    private Collection<Subscription> subscriptions;
+    private Collection<Subscription> subscriptions = new ArrayList<>();
 }

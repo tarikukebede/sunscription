@@ -8,11 +8,23 @@
     - Create Billing Address
     - Create Subscription
 - Error handling
-- Localization
+- Error Localization
 - Validation
 - CORS configuration
 - Documentation
-- Unit Test for services
+- Unit Test
+
+#### Technologies Used
+
+1. Spring Boot 2.7.6
+2. H2 Database
+
+### Database
+
+###### H2 Console
+@ http://localhost:8080/h2-console
+#### username : root
+#### password : root
 
 
 

@@ -16,7 +16,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/subscriptions")
-@Tag(name = "Subscriptions")
+@Tag(name = "Subscription")
 @RequiredArgsConstructor
 public class SubscriptionController {
 

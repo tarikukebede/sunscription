@@ -24,10 +24,4 @@ public class Model implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    @JsonIgnore
-    @CreationTimestamp
-    private Date createdOn;
-    @JsonIgnore
-    @UpdateTimestamp
-    private Date updatedOn;
 }

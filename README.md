@@ -1,26 +1,21 @@
-# Subscription API
+# Subscription Management System
 
-### What's implemented
+### Overview
+This repository contains the backend API for a subscription management system developed using Spring Boot. 
+The system is designed to efficiently handle user subscriptions, manage subscription plans, process payments, and track subscription statuses within a service or application.
 
-- API endpoints for
-    - Create Account
-    - Get Account
-    - Delete Account
-    - Create Billing Address
-    - Create Subscription
-- Error handling
-- Error Localization
-- Validation
-- CORS configuration
-- Documentation
-- Unit Test
+#### Feature
+
+User Subscription Management: Allows users to perform subscription-related actions like subscribing, unsubscribing, and modifying plans.
+Subscription Plan Handling: Administrators can create, update, and delete subscription plans offered to users.
+User Authentication and Security: Implementation of secure authentication mechanisms for user and administrator access to the subscription system.
 
 #### Technologies Used
 
 1. Spring Boot 2.7.6
 2. H2 Database
 
-### Database
+#### Database
 
 ###### H2 Console
 @ http://localhost:8080/h2-console
